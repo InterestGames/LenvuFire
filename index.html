@@ -1,131 +1,72 @@
-<!-- index.html -->
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>LenvuFire - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LenvuFire</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Welcome to LenvuFire</h1>
-  <a href="register.html">Register</a>
-</body>
-</html>
+  <header>
+    <h1>LenvuFire</h1>
+  </header>
+  <nav>
+    <button id="nav-home">Home</button>
+    <button id="nav-settings">Setting</button>
+    <button id="nav-profile">Profile</button>
+    <button id="nav-earn">Watch and Earn</button>
+  </nav>
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <button onclick="showSection('watchEarn')">Watch and Earn</button>
+      <button onclick="showSection('survey')">Fill in the Survey</button>
+      <p>About LenvuFire: Earn diamonds by watching ads and completing surveys.</p>
+      <div class="images">[Images]</div>
+    </section><section id="settings" style="display:none">
+  <h2>Setting</h2>
+  <ul>
+    <li>Language: [Dropdown]</li>
+    <li>Balance: <span>100LF</span></li>
+    <li>History Watched Add</li>
+    <li>Support</li>
+    <li>Contact</li>
+    <li>About Us</li>
+    <li>FAQ</li>
+    <li>Location</li>
+    <li>Notification</li>
+  </ul>
+</section>
 
-<!-- register.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Register</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Register</h1>
-  <form>
-    <input type="text" placeholder="Username" required><br>
-    <input type="email" placeholder="Email" required><br>
-    <input type="password" placeholder="Password" required><br>
-    <label><input type="checkbox" required> I agree to the <a href="privacy.html">Privacy Policy</a></label><br>
-    <button type="submit">Register</button>
-  </form>
-</body>
-</html>
+<section id="profile" style="display:none">
+  <h2>Profile</h2>
+  <ul>
+    <li>Edit Profile</li>
+    <li>Location (via Google Maps)</li>
+    <li>Balance: <span>100LF</span></li>
+    <li>Terms of License</li>
+    <li>Privacy Policy</li>
+    <li>FAQ</li>
+    <li>Help</li>
+    <li>About Us</li>
+    <li>Contact (to LenvuDev)</li>
+    <li>Withdraw (Enter FF ID & select platform)</li>
+  </ul>
+  <p>All rights reserved</p>
+</section>
 
-<!-- profile.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Profile</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Your Profile</h1>
-  <p>Edit your avatar and username.</p>
-</body>
-</html>
+<section id="watchEarn" style="display:none">
+  <h2>Watch and Earn</h2>
+  <p>Watch ads to earn LF. You will be rewarded only if the site earns from the ad.</p>
+  <button>Watch Add</button>
+</section>
 
-<!-- balance.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Balance</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Your Balance</h1>
-  <p>1 credit = 1 diamond</p>
-</body>
-</html>
+<section id="survey" style="display:none">
+  <h2>Survey</h2>
+  <button>Fill in the Survey</button>
+  <p>Sometimes surveys and mini-games will appear here.</p>
+</section>
 
-<!-- about.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Us</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>About LenvuFire</h1>
-  <p>LenvuFire is a fan project aiming to help Free Fire players earn diamonds through our credit system.</p>
-</body>
-</html>
-
-<!-- contact.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Contact</h1>
-  <p>To report a problem, visit <a href="https://lenvudev.com">LenvuDev</a> or search it on Google.</p>
-</body>
-</html>
-
-<!-- faq.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>FAQ</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Frequently Asked Questions</h1>
-  <p>Here you'll find answers about using LenvuFire.</p>
-</body>
-</html>
-
-<!-- help.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Help</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Need Help?</h1>
-  <p>Visit <a href="https://lenvudev.com">LenvuDev</a> or search it on Google for support.</p>
-</body>
-</html>
-
-<!-- privacy.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <h1>Privacy Policy</h1>
-  <p>You must accept this policy to register on LenvuFire.</p>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
