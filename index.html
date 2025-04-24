@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,64 +10,68 @@
   <header>
     <h1>LenvuFire</h1>
   </header>
+
   <nav>
-    <button id="nav-home">Home</button>
-    <button id="nav-settings">Setting</button>
-    <button id="nav-profile">Profile</button>
-    <button id="nav-earn">Watch and Earn</button>
+    <button id="nav-home" class="button">Home</button>
+    <button id="nav-settings" class="button">Setting</button>
+    <button id="nav-profile" class="button">Profile</button>
+    <button id="nav-earn" class="button">Watch and Earn</button>
   </nav>
+
   <main>
     <section id="home">
       <h2>Home</h2>
-      <button onclick="showSection('watchEarn')">Watch and Earn</button>
-      <button onclick="showSection('survey')">Fill in the Survey</button>
+      <button class="button" onclick="showSection('watchEarn')">Watch and Earn</button>
+      <button class="button" onclick="showSection('survey')">Fill in the Survey</button>
       <p>About LenvuFire: Earn diamonds by watching ads and completing surveys.</p>
       <div class="images">[Images]</div>
-    </section><section id="settings" style="display:none">
-  <h2>Setting</h2>
-  <ul>
-    <li>Language: [Dropdown]</li>
-    <li>Balance: <span>100LF</span></li>
-    <li>History Watched Add</li>
-    <li>Support</li>
-    <li>Contact</li>
-    <li>About Us</li>
-    <li>FAQ</li>
-    <li>Location</li>
-    <li>Notification</li>
-  </ul>
-</section>
+    </section>
 
-<section id="profile" style="display:none">
-  <h2>Profile</h2>
-  <ul>
-    <li>Edit Profile</li>
-    <li>Location (via Google Maps)</li>
-    <li>Balance: <span>100LF</span></li>
-    <li>Terms of License</li>
-    <li>Privacy Policy</li>
-    <li>FAQ</li>
-    <li>Help</li>
-    <li>About Us</li>
-    <li>Contact (to LenvuDev)</li>
-    <li>Withdraw (Enter FF ID & select platform)</li>
-  </ul>
-  <p>All rights reserved</p>
-</section>
+    <section id="settings" style="display:none">
+      <h2>Setting</h2>
+      <ul>
+        <li>Language: [Dropdown]</li>
+        <li>Balance: <span>100LF</span></li>
+        <li>History Watched Add</li>
+        <li>Support</li>
+        <li>Contact</li>
+        <li>About Us</li>
+        <li>FAQ</li>
+        <li>Location</li>
+        <li>Notification</li>
+      </ul>
+    </section>
 
-<section id="watchEarn" style="display:none">
-  <h2>Watch and Earn</h2>
-  <p>Watch ads to earn LF. You will be rewarded only if the site earns from the ad.</p>
-  <button>Watch Add</button>
-</section>
+    <section id="profile" style="display:none">
+      <h2>Profile</h2>
+      <ul>
+        <li>Edit Profile</li>
+        <li>Location (via Google Maps)</li>
+        <li>Balance: <span>100LF</span></li>
+        <li>Terms of License</li>
+        <li>Privacy Policy</li>
+        <li>FAQ</li>
+        <li>Help</li>
+        <li>About Us</li>
+        <li>Contact (to LenvuDev)</li>
+        <li>Withdraw (Enter FF ID & select platform)</li>
+      </ul>
+      <p class="footer-note">All rights reserved</p>
+    </section>
 
-<section id="survey" style="display:none">
-  <h2>Survey</h2>
-  <button>Fill in the Survey</button>
-  <p>Sometimes surveys and mini-games will appear here.</p>
-</section>
+    <section id="watchEarn" style="display:none">
+      <h2>Watch and Earn</h2>
+      <p>Watch ads to earn LF. You will be rewarded only if the site earns from the ad.</p>
+      <button class="button">Watch Add</button>
+    </section>
 
+    <section id="survey" style="display:none">
+      <h2>Survey</h2>
+      <button class="button">Fill in the Survey</button>
+      <p>Sometimes surveys and mini-games will appear here.</p>
+    </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
